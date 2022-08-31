@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Счета. Carventa</title>
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+</head>
+<body>
+	<div class="wrapper inner-page">
+		<div class="header">
+			<a href="#/" class="back-btn">
+				<img src="images/arrow-left.svg" alt="">
+			</a>
+			<div class="logo">
+				<img src="images/carventa.svg" alt="Logo">
+			</div>
+			<div class="nav">
+				<ul>
+					<li>
+						<a href="#">Запросы оценки автомобиля</a>
+					</li>
+					<li>
+						<a href="#">О сервисе</a>
+					</li>
+					<li>
+						<a href="#">Контакты</a>
+					</li>
+					<li>
+						<a href="#" class="icon-item toggle-submenu">
+							<i class="menu-icon"><img src="images/profile.svg"></i> 
+							<span>Профиль</span>
+						</a>
+						<div class="submenu-holder">
+							<i class="submenu-icon toggle-close"><img src="images/close.svg" alt="Закрыть"></i>
+							<ul class="submenu">
+								<li class="no-icon-item">
+									<span>Иван Иванов</span>
+									<ul class="actions">
+										<li>
+											<a href="#">Редактировать</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#" class="icon-item">
+										<i class="menu-icon"><img src="images/clarity_settings-line.svg" alt="Настройки"></i> 
+										<span>Настройки</span>
+									</a>
+									<ul>
+										<li>
+											<a href="#">Пользователи</a>
+										</li>
+										<li>
+											<a href="#">Дилерские центры</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#" class="icon-item">
+										<i class="menu-icon"><img src="images/exit.svg" alt="Выйти"></i> 
+										<span>Выйти</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="nav mobile">
+				<ul>
+					<li>
+						<a href="#" class="icon-item toggle-submenu">
+							<i class="menu-icon"><img src="images/profile.svg"></i>
+						</a>
+						<div class="submenu-holder">
+							<i class="submenu-icon toggle-close"><img src="images/close.svg" alt="Закрыть"></i>
+							<ul class="submenu">
+								<li class="no-icon-item">
+									<span>Иван Иванов</span>
+									<ul class="actions">
+										<li>
+											<a href="#">Редактировать</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#" class="icon-item">
+										<i class="menu-icon"><img src="images/clarity_settings-line.svg" alt="Настройки"></i> 
+										<span>Настройки</span>
+									</a>
+									<ul>
+										<li>
+											<a href="#">Пользователи</a>
+										</li>
+										<li>
+											<a href="#">Дилерские центры</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#" class="icon-item">
+										<i class="menu-icon"><img src="images/exit.svg" alt="Выйти"></i> 
+										<span>Выйти</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+				<input id="nav-toggle" type="checkbox">
+				<label for="nav-toggle" class="icon-burger">
+					<div class="line-holder">
+						<div class="line"></div>
+					    <div class="line"></div>
+					    <div class="line"></div>
+					</div>
+			  	</label>
+			  	<div class="nav-overlay">
+			  		<div class="request-item">
+			  			Запросы оценки автомобиля
+			  			<a href="#" class="amount">58 новых</a>
+			  		</div>
+			  		<ul>
+			  			<li><a href="#">О сервисе</a></li>
+						<li><a href="#">Дилеры-партнеры</a></li>
+						<li><a href="#">Пользовательское соглашение</a></li>
+						<li><a href="#">Политика обработки данных</a></li>
+						<li><a href="#">Контакты</a></li>
+						<li><a href="#">Чат техподдержки</a></li>
+			  		</ul>
+			  	</div>
+			</div>
+		</div>
+
+		<div class="page page-table">
+			<div class="title sm-margin flex-start sm-flex-column">
+				<h2>Счета</h2>
+			</div>
+			<div class="info-bar">
+				<span class="info-bar-title">Дилерский центр: <strong>Независимость, Москва (12345)</strong></span>
+			</div>
+			<div class="page-filter">
+				<div class="pull-right">
+					<div class="item-toggle">
+						<a href="#/" class="btn icon-btn add"><img src="images/plus.svg" /></a>
+						<a href="#/" class="btn primary icon-btn xls"><img src="images/XLS.svg"></a>
+					</div>
+					<div class="actions">
+						<a href="#/" class="btn icon-btn print"><img src="images/print.svg"></a>
+						<a href="#/" class="btn icon-btn trash"><img src="images/trash.svg"></a>
+					</div>
+				</div>
+			</div>
+			<div class="custom-table">
+				<div class="table-holder">
+					<table>
+						<tr>
+							<th>№ счета</th>
+							<th>Назначение</th>
+							<th>Сумма платежа</th>
+							<th>Счет создан</th>
+							<th>Счет оплачен</th>
+							<th>№ плат. поручения</th>
+						</tr>
+						<tr>
+							<td class="filter-cell text-center">
+								<input type="text" class="custom-input input-medium">
+							</td>
+							<td class="filter-cell">
+								
+								<div class="custom-select">
+									<select>
+										<option value="1">Не выбрано</option>
+										<option value="2">АЦ Вологда (00123)</option>
+										<option value="3">АЦ Вологда (00123)</option>
+										<option value="4">АЦ Вологда (00123)</option>
+									</select>
+								</div>
+							</td>
+							<td class="filter-cell">
+								<div class="input-group">
+									<span>от</span>
+									<input id="input-date" class="custom-input text-right" pattern="_ Р" data-slots="_" data-accept="\d*" type="text" name="from">
+								</div>
+								<div class="input-group">
+									<span>до</span>
+									<input class="custom-input text-right" type="text" value="9000 Р" pattern="_ Р" data-slots="_" data-accept="\d*" name="to" value="30.06.2022">
+								</div>
+							</td>
+							<td class="filter-cell">
+								<div class="input-group">
+									<span>от</span>
+									<input id="input-date" class="custom-input" value="12.05.2022" pattern="__.__.____" data-slots="_" type="text" name="from">
+								</div>
+								<div class="input-group">
+									<span>до</span>
+									<input class="custom-input" type="text" value="12.05.2022" pattern="__.__.____" data-slots="_" name="to" value="30.06.2022">
+								</div>
+							</td>
+							<td class="filter-cell">
+								<div class="input-group">
+									<span>от</span>
+									<input id="input-date" class="custom-input" value="12.05.2022" pattern="__.__.____" data-slots="_" type="text" name="from">
+								</div>
+								<div class="input-group">
+									<span>до</span>
+									<input class="custom-input" type="text" value="12.05.2022" pattern="__.__.____" data-slots="_" name="to" value="30.06.2022">
+								</div>
+							</td>
+							<td class="filter-cell">
+								<input type="text" class="custom-input input-medium" name="user" maxlength="10">
+							</td>
+						</tr>
+						<tr>
+							<td>10-123</td>
+							<td  class="text-left">Оплата услуг, январь 2022</td>
+							<td>400,00 Р</td>
+							<td>12.06.2022</td>
+							<td>12.06.2022</td>
+							<td>ПП 1218-23</td>
+						</tr>
+						<tr>
+							<td>10-125</td>
+							<td  class="text-left">До. счет на оплату</td>
+							<td>150,00 Р</td>
+							<td>10.06.2022</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr class="inactive">
+							<td>10-126</td>
+							<td  class="text-left">Оплата услуг, декабрь 2021</td>
+							<td>100 000,50 Р</td>
+							<td>06.06.2022</td>
+							<td>06.06.2022</td>
+							<td>12345</td>
+						</tr>
+						<tr class="hidden">
+							<td>10-123</td>
+							<td  class="text-left">Оплата услуг, январь 2022</td>
+							<td>400,00 Р</td>
+							<td>12.06.2022</td>
+							<td>12.06.2022</td>
+							<td>ПП 1218-23</td>
+						</tr>
+						<tr class="hidden">
+							<td>10-123</td>
+							<td  class="text-left">Оплата услуг, январь 2022</td>
+							<td>400,00 Р</td>
+							<td>12.06.2022</td>
+							<td>12.06.2022</td>
+							<td>ПП 1218-23</td>
+						</tr>
+						<tr class="hidden">
+							<td>10-123</td>
+							<td  class="text-left">Оплата услуг, январь 2022</td>
+							<td>400,00 Р</td>
+							<td>12.06.2022</td>
+							<td>12.06.2022</td>
+							<td>ПП 1218-23</td>
+						</tr>
+						<tr class="hidden">
+							<td>10-123</td>
+							<td  class="text-left">Оплата услуг, январь 2022</td>
+							<td>400,00 Р</td>
+							<td>12.06.2022</td>
+							<td>12.06.2022</td>
+							<td>ПП 1218-23</td>
+						</tr>
+						<tr class="hidden">
+							<td>10-123</td>
+							<td  class="text-left">Оплата услуг, январь 2022</td>
+							<td>400,00 Р</td>
+							<td>12.06.2022</td>
+							<td>12.06.2022</td>
+							<td>ПП 1218-23</td>
+						</tr>
+						<tr class="hidden">
+							<td>10-123</td>
+							<td  class="text-left">Оплата услуг, январь 2022</td>
+							<td>400,00 Р</td>
+							<td>12.06.2022</td>
+							<td>12.06.2022</td>
+							<td>ПП 1218-23</td>
+						</tr>
+						<tr class="hidden">
+							<td>10-123</td>
+							<td  class="text-left">Оплата услуг, январь 2022</td>
+							<td>400,00 Р</td>
+							<td>12.06.2022</td>
+							<td>12.06.2022</td>
+							<td>ПП 1218-23</td>
+						</tr>
+						<tr class="hidden">
+							<td>10-123</td>
+							<td  class="text-left">Оплата услуг, январь 2022</td>
+							<td>400,00 Р</td>
+							<td>12.06.2022</td>
+							<td>12.06.2022</td>
+							<td>ПП 1218-23</td>
+						</tr>
+						<tr class="hidden">
+							<td>10-123</td>
+							<td  class="text-left">Оплата услуг, январь 2022</td>
+							<td>400,00 Р</td>
+							<td>12.06.2022</td>
+							<td>12.06.2022</td>
+							<td>ПП 1218-23</td>
+						</tr>
+						<tr class="hidden">
+							<td>10-123</td>
+							<td  class="text-left">Оплата услуг, январь 2022</td>
+							<td>400,00 Р</td>
+							<td>12.06.2022</td>
+							<td>12.06.2022</td>
+							<td>ПП 1218-23</td>
+						</tr>
+					</table>
+				</div>
+				<div class="table-footer">
+					Записи: <span class="highlight">1-10</span> из <span class="highlight">146</span>
+				</div>
+			</div>
+			<div class="link-separator">
+				<a id="showMore" href="#/">Показать еще</a>
+			</div>
+
+		</div>
+		
+		
+		<div class="footer">
+			<div class="logo">
+				<img src="images/carventa.svg" alt="Logo">
+			</div>
+			<span>Удобный сервис поиска вариантов продажи или обмена автомобиля от&nbsp;официальных дилеров</span>
+			<ul>
+				<li>
+					<a href="#">О проекте</a>
+				</li>
+				<li>
+					<a href="#">Контакты</a>
+				</li>
+				<li>
+					<a href="#">Правовая информация</a>
+				</li>
+			</ul>
+			<div class="copyrights">
+				© Carventa 2022 Все права защищены
+			</div>
+		</div>
+	</div>
+
+	<div id="modalComment" class="modal">
+		<div class="modal-bg"></div>
+		<div class="modal-window">
+			<div class="modal-title">Комментарий</div>
+			<div class="modal-body">
+				<span>
+					Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.
+				</span>
+			</div>
+			<div class="modal-footer text-center">
+				<a href="#/" class="btn" data-action="close">Закрыть</a>
+			</div>
+		</div>
+	</div>
+	<div id="modalDetach" class="modal">
+		<div class="modal-bg"></div>
+		<div class="modal-window modal-window-mini">
+			<div class="modal-title">Отвязывание от счета</div>
+			<div class="modal-body text-center">
+				<span>Точно отвязываем?</span>
+			</div>
+			<div class="modal-footer text-center">
+				<a href="#/" class="btn" data-action="close">Отвязать</a>
+				<a href="#/" class="btn btn-default" data-action="close">Отмена</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- Toggle table row -->
+	<script type="text/javascript" src="js/toggletablerow.js"></script>
+
+	<!-- Modal window -->
+	<script type="text/javascript" src="js/modalwindow.js"></script>
+
+	<!-- Show more -->
+	<script type="text/javascript" src="js/showmore.js"></script>
+
+	<!-- Show active -->
+	<script type="text/javascript" src="js/showactive.js"></script>
+
+	<!-- input mask -->
+	<script type="text/javascript" src="js/inputmask.js"></script>
+
+	<!-- profile toggle menu -->
+	<script type="text/javascript" src="js/accountnav.js"></script>
+</body>
+</html>

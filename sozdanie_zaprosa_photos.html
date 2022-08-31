@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Создание запроса. Carventa</title>
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+</head>
+<body>
+	<div class="wrapper inner-page">
+		<div class="header">
+			<a href="#/" class="back-btn">
+				<img src="images/arrow-left.svg" alt="">
+			</a>
+			<div class="logo">
+				<img src="images/carventa.svg" alt="Logo">
+			</div>
+			<div class="nav">
+				<ul>
+					<li>
+						<a href="#">Запросы оценки автомобиля</a>
+					</li>
+					<li>
+						<a href="#">О сервисе</a>
+					</li>
+					<li>
+						<a href="#">Контакты</a>
+					</li>
+					<li>
+						<a href="#" class="icon-item toggle-submenu">
+							<i class="menu-icon"><img src="images/profile.svg"></i> 
+							<span>Профиль</span>
+						</a>
+						<div class="submenu-holder">
+							<i class="submenu-icon toggle-close"><img src="images/close.svg" alt="Закрыть"></i>
+							<ul class="submenu">
+								<li class="no-icon-item">
+									<span>Иван Иванов</span>
+									<ul class="actions">
+										<li>
+											<a href="#">Редактировать</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#" class="icon-item">
+										<i class="menu-icon"><img src="images/clarity_settings-line.svg" alt="Настройки"></i> 
+										<span>Настройки</span>
+									</a>
+									<ul>
+										<li>
+											<a href="#">Пользователи</a>
+										</li>
+										<li>
+											<a href="#">Дилерские центры</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#" class="icon-item">
+										<i class="menu-icon"><img src="images/exit.svg" alt="Выйти"></i> 
+										<span>Выйти</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="nav mobile">
+				<ul>
+					<li>
+						<a href="#" class="icon-item toggle-submenu">
+							<i class="menu-icon"><img src="images/profile.svg"></i>
+						</a>
+						<div class="submenu-holder">
+							<i class="submenu-icon toggle-close"><img src="images/close.svg" alt="Закрыть"></i>
+							<ul class="submenu">
+								<li class="no-icon-item">
+									<span>Иван Иванов</span>
+									<ul class="actions">
+										<li>
+											<a href="#">Редактировать</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#" class="icon-item">
+										<i class="menu-icon"><img src="images/clarity_settings-line.svg" alt="Настройки"></i> 
+										<span>Настройки</span>
+									</a>
+									<ul>
+										<li>
+											<a href="#">Пользователи</a>
+										</li>
+										<li>
+											<a href="#">Дилерские центры</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#" class="icon-item">
+										<i class="menu-icon"><img src="images/exit.svg" alt="Выйти"></i> 
+										<span>Выйти</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+				<input id="nav-toggle" type="checkbox">
+				<label for="nav-toggle" class="icon-burger">
+					<div class="line-holder">
+						<div class="line"></div>
+					    <div class="line"></div>
+					    <div class="line"></div>
+					</div>
+			  	</label>
+			  	<div class="nav-overlay">
+			  		<div class="request-item">
+			  			Запросы оценки автомобиля
+			  			<a href="#" class="amount">58 новых</a>
+			  		</div>
+			  		<ul>
+			  			<li><a href="#">О сервисе</a></li>
+						<li><a href="#">Дилеры-партнеры</a></li>
+						<li><a href="#">Пользовательское соглашение</a></li>
+						<li><a href="#">Политика обработки данных</a></li>
+						<li><a href="#">Контакты</a></li>
+						<li><a href="#">Чат техподдержки</a></li>
+			  		</ul>
+			  	</div>
+			</div>
+		</div>
+
+		<div class="page page-table">
+			<div class="title title-column">
+				<h2>Создание запроса</h2>
+				<span class="subtitle">Фотографии автомобиля</span>
+			</div>
+
+			<div class="info-bar">
+				<div class="qr-bar">
+					<div class="description">
+						<div>
+							<span>Для следующего шага, лучше воспользоваться мобильной версией, открытой в вашем смартфоне.
+							Откройте видеокамеру на вашем смартфоне и наведите ее на этот QR-код со ссылкой на ваш запрос: </span>
+						</div>
+						<div class="qr-holder">
+							<img src="images/qr.png">
+						</div>
+					</div>
+					<div>
+						<span>Если необходимые фотографии уже имеются на вашем компьютере, то для продолжения оформления заявки необходимо загрузить по одной фотографии в каждом ракурсе:</span>
+					</div>
+				</div>
+				<div class="text-center mob-description">
+					<span >Для продолжения оформления необходимо загрузить по одной фотографии в каждом ракурсе</span>
+				</div>
+				
+			</div>
+			
+			<div class="photo-attachment">
+				<div class="cols-4 cols-xs-2 cols-s-1">
+					<div class="col">
+						<div class="item">
+								<input type="file" id="forward">
+								<span class="item-title">Вид спереди</span>
+								<div>
+									<img src="images/rear.png" alt="">
+								</div>
+								<div class="uploaded">
+									<img class="img-item modal-link" for="#modalEditPhoto" src="images/preview.jpg" alt="">
+									<a href="#/" class="btn icon-btn delete">
+										<img src="images/trash.svg">
+									</a>
+								</div>
+								<label for='forward'></label>
+						</div>
+					</div>
+					<div class="col">
+						<div class="item">
+							<input type="file" id="rightview">
+							<span class="item-title">Вид сзади справа</span>
+							<div>
+								<img src="images/rear.png" alt="">
+							</div>
+							<div class="uploaded">
+								<img class="img-item modal-link" for="#modalAddPhoto" src="" alt="">
+								<a href="#/" class="btn icon-btn delete">
+									<img src="images/trash.svg">
+								</a>
+							</div>
+							<label for='rightview'></label>
+						</div>
+					</div>
+					<div class="col">
+						<div class="item">
+							<input type="file" id="salon">
+							<span class="item-title">Интерьер</span>
+							<div>
+								<img src="images/salon.png" alt="">
+							</div>
+							<div class="uploaded">
+								<img class="img-item modal-link" for="#modalAddPhoto" src="" alt="">
+								<a href="#/" class="btn icon-btn delete">
+									<img src="images/trash.svg">
+								</a>
+							</div>
+							<label for='salon'></label>
+						</div>
+					</div>
+					<div class="col">
+						<div class="item">
+							<input type="file" id="sts">
+							<span class="item-title">Свидетельство о регистрации <br>транспортного средства (СТС)</span>
+							<div>
+								<img src="images/sts.png" alt="">
+							</div>
+							<div class="uploaded">
+								<img class="img-item modal-link" for="#modalAddPhoto" src="" alt="">
+								<a href="#/" class="btn icon-btn delete">
+									<img src="images/trash.svg">
+								</a>
+							</div>
+							<label for='sts'></label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="text-center">
+				<a href="#/" class="btn">Далее</a>
+			</div>
+		</div>
+		
+		
+		<div class="footer">
+			<div class="logo">
+				<img src="images/carventa.svg" alt="Logo">
+			</div>
+			<span>Удобный сервис поиска вариантов продажи или обмена автомобиля от&nbsp;официальных дилеров</span>
+			<ul>
+				<li>
+					<a href="#">О проекте</a>
+				</li>
+				<li>
+					<a href="#">Контакты</a>
+				</li>
+				<li>
+					<a href="#">Правовая информация</a>
+				</li>
+			</ul>
+			<div class="copyrights">
+				© Carventa 2022 Все права защищены
+			</div>
+		</div>
+	</div>
+	<div id="modalEditPhoto" class="modal">
+		<div class="modal-bg"></div>
+		<div class="modal-window modal-window-normal">
+			<div class="close" data-action="close"><img src="images/check.svg"></div>
+			<div class="modal-title">Редактирование фотографий</div>
+			<div class="modal-body">
+				<h2 class="text-center modal-item-title">Вид спереди слева</h2>
+				<div class="modal-preview">
+					<img src="" alt="preview">
+				</div>
+			</div>
+			<div class="modal-footer text-center">
+				<div class="cols-3 col-xs-auto">
+					<div class="col">
+						<a href="#/" class="btn primary ">Добавить заглушку</a>
+					</div>
+					<div class="col">
+						<a href="#/" class="btn btn-default ">Очистить</a>
+					</div>
+					<div class="col">
+						<a href="#/" class="btn">Сохранить</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="modalAddPhoto" class="modal">
+		<div class="modal-bg"></div>
+		<div class="modal-window modal-window-normal">
+			<div class="close" data-action="close"><img src="images/check.svg"></div>
+			<div class="modal-title">Редактирование фотографий</div>
+			<div class="modal-body">
+				<h2 class="text-center modal-item-title">Вид спереди слева</h2>
+				<div class="modal-preview">
+					<img src="" alt="preview">
+				</div>
+			</div>
+			<div class="modal-footer text-center">
+				<a href="#/" class="btn save">Сохранить</a>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- image cropper -->
+	<script type="text/javascript" src="js/cropper.js"></script>
+
+	<script type="text/javascript">
+		document.addEventListener('DOMContentLoaded', () => {
+			/*add new item*/
+			const fileInput = document.querySelectorAll('.item input[type=file]')
+
+			const changeFileInputHandler = (e) => {
+				const imgItem = e.target.closest('.item').querySelector('.img-item')
+				const itemTitle = e.target.closest('.item').querySelector('.item-title')
+				let cropper = '';
+
+				if (e.target.files[0] ) {
+					const modalID = imgItem.getAttribute('for')
+					const modal = document.querySelector(modalID)
+				    const picture = new FileReader();
+
+				    picture.readAsDataURL(e.target.files[0]);
+				    
+				    picture.addEventListener('load', function(event) {
+					  const modalImg = modal.querySelector('.modal-preview img')
+					  const modalTitle = modal.querySelector('.modal-body .modal-item-title')
+
+					  modalImg.setAttribute('src', event.target.result)
+					  modalImg.style.display = 'inline-block'
+					  modalTitle.innerHTML = itemTitle.innerHTML
+					  imgItem.click();
+					  cropper = new Cropper(modalImg, { viewMode: 3});
+				      // imgItem.setAttribute('src', event.target.result);
+				      // imgItem.style.display = 'block';
+				      
+				    });
+
+				    /*cancell uploading on close modal window*/
+				    const closeModalBtn = modal.querySelector('[data-action=close]')
+					const modalBg = modal.querySelector('.modal-bg')
+
+					const closeModalHandler = () => {
+						cropper.destroy();
+						e.target.value = ''
+					}
+
+					modalBg.addEventListener('click', closeModalHandler)
+					closeModalBtn.addEventListener('click', closeModalHandler)
+
+					/*save image*/
+					const saveModalBtn = modal.querySelector('.save')
+
+					const saveModalBtnHandler = () => {
+						imgItem.setAttribute('for', '#modalEditPhoto')
+						modal.classList.remove('active')
+						const imgSrc = cropper.getCroppedCanvas().toDataURL();
+						imgItem.src = imgSrc;
+						cropper.destroy();
+						saveModalBtn.removeEventListener('click', saveModalBtnHandler)
+					}
+
+					saveModalBtn.addEventListener('click', saveModalBtnHandler)
+
+
+				}
+
+
+			}
+			fileInput.forEach(item => item.addEventListener('change', changeFileInputHandler))
+			
+
+			/*edit uploaded item*/
+
+			const imgEditItem = document.querySelectorAll('.img-item.modal-link')
+
+			const imgClickHandler = (e) => {
+				if (e.target.getAttribute('for') == '#modalEditPhoto') {
+					const itemEditTitle = e.target.closest('.item').querySelector('.item-title')
+					const imgEditItem = e.target
+
+					const modalEditID = imgEditItem.getAttribute('for')
+					const modalEdit = document.querySelector(modalEditID)
+					const modalEditImg = modalEdit.querySelector('.modal-preview img')
+					const modalEditTitle = modalEdit.querySelector('.modal-body .modal-item-title')
+
+					modalEditImg.setAttribute('src', event.target.src)
+					modalEditImg.style.display = 'inline-block'
+					modalEditTitle.innerHTML = itemEditTitle.innerHTML
+				}
+			}
+
+			imgEditItem.forEach( item => item.addEventListener('click', imgClickHandler))
+
+
+			/*Remove uploaded item*/
+			const deleteBtn = document.querySelectorAll('.delete')
+
+			const deleteBtnHandler = (e) => {
+				const imgItem = e.target.closest('.item').querySelector('.img-item')
+				const fileInput = e.target.closest('.item').querySelector('input[type=file]')
+
+				imgItem.setAttribute('src', '')
+				imgItem.setAttribute('for', '#modalAddPhoto')
+				fileInput.value = ''
+
+			}
+
+			deleteBtn.forEach(item => item.addEventListener('click', deleteBtnHandler))
+
+
+		});
+	</script>
+	
+
+	<!-- input mask -->
+	<script type="text/javascript" src="js/inputmask.js"></script>
+
+	<!-- Modal window -->
+	<script type="text/javascript" src="js/modalwindow.js"></script>
+
+	<!-- profile toggle menu -->
+	<script type="text/javascript" src="js/accountnav.js"></script>
+</body>
+</html>

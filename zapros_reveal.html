@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Запрос №3456. Carventa</title>
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+	<div class="wrapper inner-page">
+		<div class="header">
+			<a href="#/" class="back-btn">
+				<img src="images/arrow-left.svg" alt="">
+			</a>
+			<div class="logo">
+				<img src="images/carventa.svg" alt="Logo">
+			</div>
+			<div class="nav">
+				<ul>
+					<li>
+						<a href="#">Запросы оценки автомобиля</a>
+					</li>
+					<li>
+						<a href="#">О сервисе</a>
+					</li>
+					<li>
+						<a href="#">Контакты</a>
+					</li>
+					<li>
+						<a href="#" class="icon-item toggle-submenu">
+							<i class="menu-icon"><img src="images/profile.svg"></i> 
+							<span>Профиль</span>
+						</a>
+						<div class="submenu-holder">
+							<i class="submenu-icon toggle-close"><img src="images/close.svg" alt="Закрыть"></i>
+							<ul class="submenu">
+								<li class="no-icon-item">
+									<span>Иван Иванов</span>
+									<ul class="actions">
+										<li>
+											<a href="#">Редактировать</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#" class="icon-item">
+										<i class="menu-icon"><img src="images/clarity_settings-line.svg" alt="Настройки"></i> 
+										<span>Настройки</span>
+									</a>
+									<ul>
+										<li>
+											<a href="#">Пользователи</a>
+										</li>
+										<li>
+											<a href="#">Дилерские центры</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#" class="icon-item">
+										<i class="menu-icon"><img src="images/exit.svg" alt="Выйти"></i> 
+										<span>Выйти</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="nav mobile">
+				<ul>
+					<li>
+						<a href="#" class="icon-item toggle-submenu">
+							<i class="menu-icon"><img src="images/profile.svg"></i>
+						</a>
+						<div class="submenu-holder">
+							<i class="submenu-icon toggle-close"><img src="images/close.svg" alt="Закрыть"></i>
+							<ul class="submenu">
+								<li class="no-icon-item">
+									<span>Иван Иванов</span>
+									<ul class="actions">
+										<li>
+											<a href="#">Редактировать</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#" class="icon-item">
+										<i class="menu-icon"><img src="images/clarity_settings-line.svg" alt="Настройки"></i> 
+										<span>Настройки</span>
+									</a>
+									<ul>
+										<li>
+											<a href="#">Пользователи</a>
+										</li>
+										<li>
+											<a href="#">Дилерские центры</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#" class="icon-item">
+										<i class="menu-icon"><img src="images/exit.svg" alt="Выйти"></i> 
+										<span>Выйти</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+				<input id="nav-toggle" type="checkbox">
+				<label for="nav-toggle" class="icon-burger">
+					<div class="line-holder">
+						<div class="line"></div>
+					    <div class="line"></div>
+					    <div class="line"></div>
+					</div>
+			  	</label>
+			  	<div class="nav-overlay">
+			  		<div class="request-item">
+			  			Запросы оценки автомобиля
+			  			<a href="#" class="amount">58 новых</a>
+			  		</div>
+			  		<ul>
+			  			<li><a href="#">О сервисе</a></li>
+						<li><a href="#">Дилеры-партнеры</a></li>
+						<li><a href="#">Пользовательское соглашение</a></li>
+						<li><a href="#">Политика обработки данных</a></li>
+						<li><a href="#">Контакты</a></li>
+						<li><a href="#">Чат техподдержки</a></li>
+			  		</ul>
+			  	</div>
+			</div>
+		</div>
+
+		<div class="page page-table">
+			<div class="page-top-bar">
+				<div class="title title-column">
+					<h2>Запрос №3456</h2>
+					<span class="subtitle">12.06.2022 г.</span>
+				</div>
+
+				<div class="page-filter">
+					<span class="badge badge-alert">Возвращен на оформление</span>
+					<div class="pull-right">
+						<a href="#/" class="btn icon-btn edit"><img src="images/edit.svg" /></a>
+						<a href="#/" class="btn icon-btn task"><img src="images/task.svg" /></a>
+						<a href="#/" class="btn icon-btn trash"><img src="images/trash.svg" /></a>
+					</div>
+				</div>
+			</div>
+
+			<h4>Автомобиль для продажи</h4>
+			<div class="panel panel-primary">
+				<div class="panel-header">
+					VIN: <strong>SALMA54876CH84900</strong>
+				</div>
+				<div class="panel-body">
+					<span>Форд Фокус 2, 2009, хэтчбек, 5-дв, серебристый, 1,8 л, бензин, АКПП</span>
+					<div class="slider">
+						<div class="items">
+							<div class="item">
+								<img class="item-img" src="images/slider/slide-1.jpg" alt="">
+							</div>
+							<div class="item">
+								<img class="item-img" src="images/slider/slide-2.jpg" alt="">
+							</div>
+							<div class="item">
+								<img class="item-img" src="images/slider/slide-3.jpg" alt="">
+							</div>
+							<div class="item">
+								<img class="item-img" src="images/slider/slide-4.jpg" alt="">
+							</div>
+							<div class="item">
+								<img class="item-img" src="images/slider/slide-1.jpg" alt="">
+							</div>
+							<div class="item">
+								<img class="item-img" src="images/slider/slide-2.jpg" alt="">
+							</div>
+							<div class="item">
+								<img class="item-img" src="images/slider/slide-3.jpg" alt="">
+							</div>
+							<div class="item">
+								<img class="item-img" src="images/slider/slide-4.jpg" alt="">
+							</div>
+							<div class="item">
+								<img class="item-img" src="images/slider/slide-1.jpg" alt="">
+							</div>
+							<div class="item">
+								<img class="item-img" src="images/slider/slide-2.jpg" alt="">
+							</div>
+							<div class="item">
+								<img class="item-img" src="images/slider/slide-3.jpg" alt="">
+							</div>
+							<div class="item">
+								<img class="item-img" src="images/slider/slide-4.jpg" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr>
+			<h4>Автомобиль для продажи</h4>
+			<div class="toggle-table-holder">
+				<div class="toggle-table-header">
+					<span>Предложения дилерских центров (146)</span>
+					<i class="icon-choice"><img src="images/star-inactive.svg"></i>
+				</div>
+				<div class="custom-table custom-table-compact">
+					<div class="table-link-holder">
+						<div class="table-holder fixed-table highlight">
+							<table>
+								<tr>
+									<th class="small-cell">Выбор</th>
+									<th>Дилерский центр</th>
+									<th>Цена при выкупе</th>
+									<th>Цена при обмене</th>
+									<th class="small-cell">Файл</th>
+								</tr>
+								<tr>
+									<td class="small-cell">
+										<i class="icon-choice"><img src="images/star.svg" alt=""></i>
+									</td>
+									<td class="text-left">
+										<a href="#/" class="name modal-link"  for="#modalDCNotif">Авилон на Можайке</a>
+										<span class="location">Москва</span>
+									</td>
+									<td>---</td>
+									<td>
+										<span class="price">1 325 000</span>
+										<span class="period">действ. до 12.06.22</span>
+									</td>
+									<td  class="small-cell">
+										<a href="#/">
+											<a href="#/" class="modal-link" for="#modalDownloadNotif">
+												<i class="download-icon deep-yellow">
+													<img src="images/download.svg" alt="">
+												</i>
+											</a>
+										</a>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<div class="table-link">
+							<a href="#/" class="link">
+								<span>Показать предложения по обмену (3)</span>
+								<span>Скрыть предложения по обмену (3)</span>
+							</a>
+						</div>
+						<div class="table-toggle-block">
+							<div class="cols-3 cols-sm-3">
+								<div class="col">
+									<div class="info-block">
+										<div class="left">
+											<span class="name">Land Rover <br>Range Rover</span>
+											<span class="description">2012-2014, <span>бензин</span></span>
+										</div>
+										<div class="center">
+											<span class="price-label">Цена </br>при обмене</span>
+											<span class="price">1 345 000</span>
+										</div>
+										<div class="right">
+											<a href="#/" class="download-item modal-link" for="#modalDownloadNotif">
+												<i class="download-icon yellow"><img src="images/download.svg" alt=""></i>
+												<span >Скачать</span>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="col">
+									<div href="#/" class="info-block">
+										<div class="left">
+											<span class="name">Toyota <br>LC Prado</span>
+											<span class="description">2012-2014, <span>бензин</span></span>
+										</div>
+										<div class="center">
+											<span class="price-label">Цена </br>при обмене</span>
+											<span class="price">1 345 000</span>
+										</div>
+										<div class="right">
+											<a href="#/" class="download-item modal-link" for="#modalDownloadNotif">
+												<i class="download-icon yellow"><img src="images/download.svg" alt=""></i>
+												<span>Скачать</span>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="col">
+									<div class="info-block">
+										<div class="left">
+											<span class="name">Mitsubishi <br>Pagero Sport</span>
+											<span class="description">2012-2014, <span>бензин</span></span>
+										</div>
+										<div class="center">
+											<span class="price-label">Цена </br>при обмене</span>
+											<span class="price">1 345 000</span>
+										</div>
+										<div class="right">
+											<a href="#/"  class="download-item modal-link" for="#modalDownloadNotif">
+												<i class="download-icon yellow"><img src="images/download.svg" alt=""></i>
+												<span>Скачать</span>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="custom-table custom-table-compact">
+					<div class="table-link-holder">
+						<div class="table-holder single-table fixed-table highlight">
+							<table>
+								<tr>
+									<td class="small-cell" >
+										<i class="icon-choice"><img src="images/star.svg" alt=""></i>
+									</td>
+									<td class="text-left">
+										<span class="name modal-link" for="#modalDCNotif">Макадамия Карс</span>
+										<span class="location">Железногорск</span>
+									</td>
+									<td>---</td>
+									<td>
+										<span class="price">1 325 000</span>
+										<span class="period">действ. до 12.06.22</span>
+									</td>
+									<td  class="small-cell">
+										<a href="#/" class="modal-link" for="#modalDownloadNotif">
+											<i class="download-icon deep-yellow"><img src="images/download.svg" alt=""></i>
+										</a>
+									</td>
+								</tr>
+							</table>
+							<div class="table-link">
+								<a href="#/" class="link">
+									<span>Показать предложения по обмену (2)</span>
+									<span>Скрыть предложения по обмену (2)</span>
+								</a>
+							</div>
+							<div class="table-toggle-block">
+								<div class="cols-3 cols-sm-3">
+									<div class="col">
+										<div class="info-block">
+											<div class="left">
+												<span class="name">Land Rover <br>Range Rover</span>
+												<span class="description">2012-2014, <span>бензин</span></span>
+											</div>
+											<div class="center">
+												<span class="price-label">Цена </br>при обмене</span>
+												<span class="price">1 345 000</span>
+											</div>
+											<div class="right">
+												<a href="#/" class="download-item modal-link" for="#modalDownloadNotif">
+													<i class="download-icon yellow"><img src="images/download.svg" alt=""></i>
+													<span>Скачать</span>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="col">
+										<div href="#/" class="info-block">
+											<div class="left">
+												<span class="name">Toyota <br>LC Prado</span>
+												<span class="description">2012-2014, <span>бензин</span></span>
+											</div>
+											<div class="center">
+												<span class="price-label">Цена </br>при обмене</span>
+												<span class="price">1 345 000</span>
+											</div>
+											<div class="right">
+												<a href="#/" class="download-item modal-link" for="#modalDownloadNotif">
+													<i class="download-icon yellow"><img src="images/download.svg" alt=""></i>
+													<span>Скачать</span>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="col">
+										<div class="info-block inactive">
+											<div class="left">
+												<span class="name">Mitsubishi <br>Pagero Sport</span>
+												<span class="description">2012-2014, <span>бензин</span></span>
+											</div>
+											<div class="center">
+												<span class="price-label">Цена </br>при обмене</span>
+												<span class="price">1 345 000</span>
+											</div>
+											<div class="right">
+												<a href="#/"  class="download-item modal-link" for="#modalDownloadNotif">
+													<i class="download-icon yellow"><img src="images/download.svg" alt=""></i>
+													<span>Скачать</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="custom-table custom-table-compact">
+					<div class="table-link-holder">
+						<div class="table-holder single-table fixed-table">
+							<table>
+								<tr>
+									<td class="small-cell">
+										<i class="icon-choice"></i>
+									</td>
+									<td class="text-left">
+										<span class="name modal-link" for="#modalDCNotif">123CARS</span>
+										<span class="location">Томилино</span>
+									</td>
+									<td>---</td>
+									<td>
+										<span class="price">1 325 000</span>
+										<span class="period">действ. до 12.06.22</span>
+									</td>
+									<td  class="small-cell">
+										<a href="#/" class="modal-link" for="#modalDownloadNotif">
+											<i class="download-icon"><img src="images/download-inactive.svg" alt=""></i>
+										</a>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<div class="table-link">
+							<a href="#/" class="link">
+								<span>Показать предложения по обмену (1)</span>
+								<span>Скрыть предложения по обмену (1)</span>
+							</a>
+						</div>
+						<div class="table-toggle-block">
+							<div class="cols-3 cols-sm-3">
+								<div class="col">
+									<div class="info-block inactive">
+										<div class="left">
+											<span class="name">Land Rover <br>Range Rover</span>
+											<span class="description">2012-2014, <span>бензин</span></span>
+										</div>
+										<div class="center">
+											<span class="price-label">Цена </br>при обмене</span>
+											<span class="price">1 345 000</span>
+										</div>
+										<div class="right">
+											<a href="#/" class="download-item modal-link" for="#modalDownloadNotif">
+												<i class="download-icon yellow"><img src="images/download.svg" alt=""></i>
+												<span>Скачать</span>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="col">
+									<div href="#/" class="info-block inactive">
+										<div class="left">
+											<span class="name">Toyota <br>LC Prado</span>
+											<span class="description">2012-2014, <span>бензин</span></span>
+										</div>
+										<div class="center">
+											<span class="price-label">Цена </br>при обмене</span>
+											<span class="price">1 345 000</span>
+										</div>
+										<div class="right">
+											<a href="#/" class="download-item modal-link" for="#modalDownloadNotif">
+												<i class="download-icon yellow"><img src="images/download.svg" alt=""></i>
+												<span>Скачать</span>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="col">
+									<div class="info-block">
+										<div class="left">
+											<span class="name">Mitsubishi <br>Pagero Sport</span>
+											<span class="description">2012-2014, <span>бензин</span></span>
+										</div>
+										<div class="center">
+											<span class="price-label">Цена </br>при обмене</span>
+											<span class="price">1 345 000</span>
+										</div>
+										<div class="right">
+											<a href="#/"  class="download-item modal-link" for="#modalDownloadNotif">
+												<i class="download-icon yellow"><img src="images/download.svg" alt=""></i>
+												<span>Скачать</span>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="custom-table custom-table-compact">
+					<div class="table-link-holder">
+						<div class="table-holder single-table fixed-table highlight">
+							<table>
+								<tr>
+									<td class="small-cell" >
+										<i class="icon-choice"><img src="images/star.svg" alt=""></i>
+									</td>
+									<td class="text-left">
+										<span class="name modal-link" for="#modalDCNotif">CARPRICE</span>
+										<span class="location">Серпухов</span>
+									</td>
+									<td>---</td>
+									<td>
+										<span class="price">1 325 000</span>
+										<span class="period">действ. до 12.06.22</span>
+									</td>
+									<td class="small-cell">
+										<a href="#/" class="modal-link" for="#modalDownloadNotif">
+											<i class="download-icon deep-yellow"><img src="images/download.svg" alt=""></i>
+										</a>
+									</td>
+								</tr>
+							</table>
+							<div class="table-link">
+								<a href="#/" class="link">
+									<span>Показать предложения по обмену (2)</span>
+									<span>Скрыть предложения по обмену (2)</span>
+								</a>
+							</div>
+							<div class="table-toggle-block">
+								<div class="cols-3 cols-sm-3">
+									<div class="col">
+										<div class="info-block">
+											<div class="left">
+												<span class="name">Land Rover <br>Range Rover</span>
+												<span class="description">2012-2014, <span>бензин</span></span>
+											</div>
+											<div class="center">
+												<span class="price-label">Цена </br>при обмене</span>
+												<span class="price">1 345 000</span>
+											</div>
+											<div class="right">
+												<a href="#/" class="download-item modal-link" for="#modalDownloadNotif">
+													<i class="download-icon yellow"><img src="images/download.svg" alt=""></i>
+													<span>Скачать</span>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="col">
+										<div href="#/" class="info-block inactive">
+											<div class="left">
+												<span class="name">Toyota <br>LC Prado</span>
+												<span class="description">2012-2014, <span>бензин</span></span>
+											</div>
+											<div class="center">
+												<span class="price-label">Цена </br>при обмене</span>
+												<span class="price">1 345 000</span>
+											</div>
+											<div class="right">
+												<a href="#/" class="download-item modal-link" for="#modalDownloadNotif">
+													<i class="download-icon yellow"><img src="images/download.svg" alt=""></i>
+													<span>Скачать</span>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="col">
+										<div class="info-block">
+											<div class="left">
+												<span class="name">Mitsubishi <br>Pagero Sport</span>
+												<span class="description">2012-2014, <span>бензин</span></span>
+											</div>
+											<div class="center">
+												<span class="price-label">Цена </br>при обмене</span>
+												<span class="price">1 345 000</span>
+											</div>
+											<div class="right">
+												<a href="#/"  class="download-item modal-link" for="#modalDownloadNotif">
+													<i class="download-icon yellow"><img src="images/download.svg" alt=""></i>
+													<span>Скачать</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		
+		
+		<div class="footer">
+			<div class="logo">
+				<img src="images/carventa.svg" alt="Logo">
+			</div>
+			<span>Удобный сервис поиска вариантов продажи или обмена автомобиля от&nbsp;официальных дилеров</span>
+			<ul>
+				<li>
+					<a href="#">О проекте</a>
+				</li>
+				<li>
+					<a href="#">Контакты</a>
+				</li>
+				<li>
+					<a href="#">Правовая информация</a>
+				</li>
+			</ul>
+			<div class="copyrights">
+				© Carventa 2022 Все права защищены
+			</div>
+		</div>
+	</div>
+	<div id="modalDCNotif" class="modal">
+		<div class="modal-bg"></div>
+		<div class="modal-window modal-window-small">
+			<div class="close"><img src="images/check.svg" data-action="close"></div>
+			<div class="modal-logo">
+				<img src="images/carventa-modal.svg" alt="">
+			</div>
+			<div class="modal-body text-center">
+				<strong class="p-t-20 normal">После выбора вы&nbsp;узнаете контактную информацию дилерского центра, а&nbsp;ваша контактактная информация будет передана в&nbsp;дилерский центр.</strong>
+				<strong class="p-t-20 mini">Внимание!<br>
+				Сотрудники дилерского центра так&nbsp;же увидят ваши личные данные. Выбирая предложение, вы&nbsp;соглашаетесь с&nbsp;условиями о&nbsp;передаче личных данных третьим лицам.</strong>
+				<a href="#/" class="btn modal-link m-t-40" for="#modalDCInfo" >Согласен</a>
+			</div>
+		</div>
+	</div>
+	<div id="modalDownloadNotif" class="modal">
+		<div class="modal-bg"></div>
+		<div class="modal-window modal-window-small">
+			<div class="close"><img src="images/check.svg" data-action="close"></div>
+			<div class="modal-logo">
+				<img src="images/carventa-modal.svg" alt="">
+			</div>
+			<div class="modal-body text-center">
+				<strong class="p-t-20 normal">Вы&nbsp;сможете скачать файл только после выбора<br> предложения от&nbsp;этого дилерского центра. <br><br>Отметьте данное предложение, нажав на&nbsp;кружок слева<br> от&nbsp;названия дилерского центра.</strong>
+				<strong class="p-t-20 mini">Внимание!<br>
+				Сотрудники дилерского центра так&nbsp;же увидят ваши личные данные. Выбирая предложение, вы&nbsp;соглашаетесь с&nbsp;условиями о&nbsp;передаче личных данных третьим лицам.</strong>
+				<a href="#/" class="btn m-t-40" data-action="close"  >Понятно</a>
+			</div>
+		</div>
+	</div>
+	<div id="modalActiveQuerstionsNotif" class="modal">
+		<div class="modal-bg"></div>
+		<div class="modal-window modal-window-small">
+			<div class="close"><img src="images/check.svg" data-action="close"></div>
+			<div class="modal-logo">
+				<img src="images/carventa-modal.svg" alt="">
+			</div>
+			<div class="modal-body text-center">
+				<strong class="p-t-15 normal">Обратите внимание!<br>
+				В&nbsp;вашем профиле может быть не&nbsp;более 3-х активных запросов на&nbsp;оценку.</strong>
+				<strong class="p-t-5 normal">И&nbsp;только один из&nbsp;них может быть в&nbsp;статусе &laquo;Черновик&raquo; или &laquo;Возвращен на&nbsp;доработку&raquo;.</strong>
+				<strong class="p-t-5 normal">Закройте&nbsp;/ удалите ненужные запросы, чтобы создать еще один запрос на&nbsp;оценку.</strong>
+				<a href="#/" class="btn m-t-40" data-action="close" >Понятно</a>
+			</div>
+		</div>
+	</div>
+
+	<div id="modalDCInfo" class="modal">
+		<div class="modal-bg"></div>
+		<div class="modal-window modal-window-small">
+			<div class="close"><img src="images/check.svg" data-action="close"></div>
+			<div class="modal-title modal-title-normal">ИНФОРМАЦИЯ  О ДИЛЕРСКОМ ЦЕНТРЕ</div>
+			<div class="modal-body text-center">
+				<div class="info-form">
+					<div class="info-block">
+						<strong>АВИЛОН на Можайке</strong>
+						<span>Москва, Можайское шоссе, 95А</span>
+					</div>
+					<div class="info-block">
+						<strong>+7 495 456-56-56</strong>
+						<span>amozhdc@avilon.ru</span>
+					</div>
+					
+					<!-- <img src="images/map.jpg" alt="map"> -->
+					<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A5cf8299be0bf4fb7be26b83aa2060c1b0afac32f7354761c94f633675a041d72&amp;source=constructor" width="282" height="148" frameborder="0"></iframe>
+					<a href="#/" class="btn m-t-30" data-action="close" >Закрыть</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- table accordion -->
+	<script type="text/javascript" src="js/tableaccordion.js"></script>
+
+	<!-- slider -->
+	<script type="text/javascript" src="js/slider.js"></script>
+
+	<!-- Modal window -->
+	<script type="text/javascript" src="js/modalwindow.js"></script>
+
+	<!-- profile toggle menu -->
+	<script type="text/javascript" src="js/accountnav.js"></script>
+</body>
+</html>

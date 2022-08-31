@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Запросы на оценку. Carventa</title>
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+</head>
+<body>
+	<div class="wrapper inner-page">
+		<div class="header">
+			<a href="#/" class="back-btn">
+				<img src="images/arrow-left.svg" alt="">
+			</a>
+			<div class="logo">
+				<img src="images/carventa.svg" alt="Logo">
+			</div>
+			<div class="nav">
+				<ul>
+					<li>
+						<a href="#">Запросы оценки автомобиля</a>
+					</li>
+					<li>
+						<a href="#">О сервисе</a>
+					</li>
+					<li>
+						<a href="#">Контакты</a>
+					</li>
+					<li>
+						<a href="#" class="icon-item toggle-submenu">
+							<i class="menu-icon"><img src="images/profile.svg"></i> 
+							<span>Профиль</span>
+						</a>
+						<div class="submenu-holder">
+							<i class="submenu-icon toggle-close"><img src="images/close.svg" alt="Закрыть"></i>
+							<ul class="submenu">
+								<li class="no-icon-item">
+									<span>Иван Иванов</span>
+									<ul class="actions">
+										<li>
+											<a href="#">Редактировать</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#" class="icon-item">
+										<i class="menu-icon"><img src="images/clarity_settings-line.svg" alt="Настройки"></i> 
+										<span>Настройки</span>
+									</a>
+									<ul>
+										<li>
+											<a href="#">Пользователи</a>
+										</li>
+										<li>
+											<a href="#">Дилерские центры</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#" class="icon-item">
+										<i class="menu-icon"><img src="images/exit.svg" alt="Выйти"></i> 
+										<span>Выйти</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="nav mobile">
+				<ul>
+					<li>
+						<a href="#" class="icon-item toggle-submenu">
+							<i class="menu-icon"><img src="images/profile.svg"></i>
+						</a>
+						<div class="submenu-holder">
+							<i class="submenu-icon toggle-close"><img src="images/close.svg" alt="Закрыть"></i>
+							<ul class="submenu">
+								<li class="no-icon-item">
+									<span>Иван Иванов</span>
+									<ul class="actions">
+										<li>
+											<a href="#">Редактировать</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#" class="icon-item">
+										<i class="menu-icon"><img src="images/clarity_settings-line.svg" alt="Настройки"></i> 
+										<span>Настройки</span>
+									</a>
+									<ul>
+										<li>
+											<a href="#">Пользователи</a>
+										</li>
+										<li>
+											<a href="#">Дилерские центры</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#" class="icon-item">
+										<i class="menu-icon"><img src="images/exit.svg" alt="Выйти"></i> 
+										<span>Выйти</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+				<input id="nav-toggle" type="checkbox">
+				<label for="nav-toggle" class="icon-burger">
+					<div class="line-holder">
+						<div class="line"></div>
+					    <div class="line"></div>
+					    <div class="line"></div>
+					</div>
+			  	</label>
+			  	<div class="nav-overlay">
+			  		<div class="request-item">
+			  			Запросы оценки автомобиля
+			  			<a href="#" class="amount">58 новых</a>
+			  		</div>
+			  		<ul>
+			  			<li><a href="#">О сервисе</a></li>
+						<li><a href="#">Дилеры-партнеры</a></li>
+						<li><a href="#">Пользовательское соглашение</a></li>
+						<li><a href="#">Политика обработки данных</a></li>
+						<li><a href="#">Контакты</a></li>
+						<li><a href="#">Чат техподдержки</a></li>
+			  		</ul>
+			  	</div>
+			</div>
+		</div>
+
+		<div class="page page-table">
+			<div class="title sm-margin">
+				<h2>Запросы на оценку</h2>
+				<div class="pull-right">
+					<a href="#" class="btn primary" target="_blank">
+						<span>Экспорт в Excel</span>
+					</a>
+				</div>
+			</div>
+			<div class="page-filter">
+				<span>С учетом критериев ДЦ:</span>
+				<div class="custom-select">
+					<select>
+						<option value="1">АЦ Вологда (00123)</option>
+						<option value="2">АЦ Вологда (00123)</option>
+						<option value="3">АЦ Вологда (00123)</option>
+						<option value="4">АЦ Вологда (00123)</option>
+						<option value="5">АЦ Вологда (00123)</option>
+						<option value="6">АЦ Вологда (00123)</option>
+						<option value="7">АЦ Вологда (00123)</option>
+					</select>
+				</div>
+				<a href="#/" class="link">Критерии</a>
+				<div class="pull-right">
+					<div class="custom-select">
+						<select>
+							<option value="1">Не выбрано</option>
+							<option value="2">АЦ Вологда (00123)</option>
+							<option value="3">АЦ Вологда (00123)</option>
+							<option value="4">АЦ Вологда (00123)</option>
+						</select>
+					</div>
+					<a class="btn icon-btn del" href="#/"><img src="images/del.svg"></a>
+				</div>
+			</div>
+			<div class="custom-table">
+				<div class="table-holder">
+					<table>
+						<tr>
+							<th>ID</th>
+							<th>Автомобиль</th>
+							<th>Регион</th>
+							<th>Просмотров</th>
+							<th>Предложений опубликовно</th>
+							<th>Предложений выбрано</th>
+							<th>Статус</th>
+							<th>Дата создания</th>
+						</tr>
+						<tr>
+							<td class="filter-cell">
+								<div class="no-num">
+									_
+								</div>
+							</td>
+							<td class="filter-cell">
+								<div class="custom-select">
+									<select>
+										<option value="1">Не выбрано</option>
+										<option value="2">АЦ Вологда (00123)</option>
+										<option value="3">АЦ Вологда (00123)</option>
+										<option value="4">АЦ Вологда (00123)</option>
+									</select>
+								</div>
+								<div class="custom-select">
+									<select>
+										<option value="1">Не выбрано</option>
+										<option value="2">АЦ Вологда (00123)</option>
+										<option value="3">АЦ Вологда (00123)</option>
+										<option value="4">АЦ Вологда (00123)</option>
+									</select>
+								</div>
+							</td>
+							<td class="filter-cell">
+								<div class="custom-select">
+									<select>
+										<option value="1">Нет</option>
+										<option value="2">Москва и МО</option>
+									</select>
+								</div>
+							</td>
+							<td  class="filter-cell">
+								<span>Все / мои</span>
+							</td>
+							<td  class="filter-cell">
+								<span>Все / мои</span>
+							</td>
+							<td  class="filter-cell">
+								<span>Все / мои</span>
+							</td>
+							<td class="filter-cell">
+								<div class="custom-select">
+									<select>
+										<option value="1">Нет</option>
+										<option value="2">Активен</option>
+									</select>
+								</div>
+							</td>
+							<td  class="filter-cell">
+								<div class="input-group">
+									<span>от</span>
+									<input id="input-date" class="custom-input" value="01.06.2022" pattern="__.__.____" data-slots="_" type="text" name="from">
+								</div>
+								<div class="input-group">
+									<span>до</span>
+									<input class="custom-input" type="text" value="30.06.2022" pattern="__.__.____" data-slots="_" name="to" value="30.06.2022">
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>123</td>
+							<td class="align-left">
+								<strong>Audi A8<i><img src="images/good.svg" alt=""></i><i><img src="images/stat.svg" alt=""></i></strong>
+								<span>2000 см3, 300 л.с., автомат, полный привод, красный</span>
+							</td>
+							<td class="align-left">Ярославская обл.</td>
+							<td>100 / 5</td>
+							<td>10 / 2</td>
+							<td>3 / 0</td>
+							<td>Идет сбор предложений</td>
+							<td>05.06.2022</td>
+						</tr>
+						<tr>
+							<td>124</td>
+							<td class="align-left">
+								<strong>MB E-Class<i><img src="images/bad.svg" alt=""></i><i><img src="images/stat.svg" alt=""></i></strong>
+								<span>2000 см3, 300 л.с., автомат, полный привод, красный</span>
+							</td>
+							<td class="align-left">Москва</td>
+							<td>0 / 0</td>
+							<td>0 / 0</td>
+							<td>0 / 0</td>
+							<td>На модерации</td>
+							<td>15.06.2022</td>
+						</tr>
+						<tr class="hidden">
+							<td>124</td>
+							<td class="align-left">
+								<strong>MB E-Class<i><img src="images/good.svg" alt=""></i><i><img src="images/stat.svg" alt=""></i></strong>
+								<span>2000 см3, 300 л.с., автомат, полный привод, красный</span>
+							</td>
+							<td class="align-left">Москва</td>
+							<td>0 / 0</td>
+							<td>0 / 0</td>
+							<td>0 / 0</td>
+							<td>На модерации</td>
+							<td>15.06.2022</td>
+						</tr>
+						<tr class="hidden">
+							<td>124</td>
+							<td class="align-left">
+								<strong>MB E-Class<i><img src="images/good.svg" alt=""></i><i><img src="images/stat.svg" alt=""></i></strong>
+								<span>2000 см3, 300 л.с., автомат, полный привод, красный</span>
+							</td>
+							<td class="align-left">Москва</td>
+							<td>0 / 0</td>
+							<td>0 / 0</td>
+							<td>0 / 0</td>
+							<td>На модерации</td>
+							<td>15.06.2022</td>
+						</tr>
+						<tr class="hidden">
+							<td>124</td>
+							<td class="align-left">
+								<strong>MB E-Class<i><img src="images/good.svg" alt=""></i><i><img src="images/stat.svg" alt=""></i></strong>
+								<span>2000 см3, 300 л.с., автомат, полный привод, красный</span>
+							</td>
+							<td class="align-left">Москва</td>
+							<td>0 / 0</td>
+							<td>0 / 0</td>
+							<td>0 / 0</td>
+							<td>На модерации</td>
+							<td>15.06.2022</td>
+						</tr>
+						<tr class="hidden">
+							<td>124</td>
+							<td class="align-left">
+								<strong>MB E-Class<i><img src="images/good.svg" alt=""></i><i><img src="images/stat.svg" alt=""></i></strong>
+								<span>2000 см3, 300 л.с., автомат, полный привод, красный</span>
+							</td>
+							<td class="align-left">Москва</td>
+							<td>0 / 0</td>
+							<td>0 / 0</td>
+							<td>0 / 0</td>
+							<td>На модерации</td>
+							<td>15.06.2022</td>
+						</tr>
+						<tr class="hidden">
+							<td>124</td>
+							<td class="align-left">
+								<strong>MB E-Class<i><img src="images/good.svg" alt=""></i><i><img src="images/stat.svg" alt=""></i></strong>
+								<span>2000 см3, 300 л.с., автомат, полный привод, красный</span>
+							</td>
+							<td class="align-left">Москва</td>
+							<td>0 / 0</td>
+							<td>0 / 0</td>
+							<td>0 / 0</td>
+							<td>На модерации</td>
+							<td>15.06.2022</td>
+						</tr>
+						<tr class="hidden">
+							<td>124</td>
+							<td class="align-left">
+								<strong>MB E-Class<i><img src="images/good.svg" alt=""></i><i><img src="images/stat.svg" alt=""></i></strong>
+								<span>2000 см3, 300 л.с., автомат, полный привод, красный</span>
+							</td>
+							<td class="align-left">Москва</td>
+							<td>0 / 0</td>
+							<td>0 / 0</td>
+							<td>0 / 0</td>
+							<td>На модерации</td>
+							<td>15.06.2022</td>
+						</tr>
+						<tr class="hidden">
+							<td>124</td>
+							<td class="align-left">
+								<strong>MB E-Class<i><img src="images/good.svg" alt=""></i><i><img src="images/stat.svg" alt=""></i></strong>
+								<span>2000 см3, 300 л.с., автомат, полный привод, красный</span>
+							</td>
+							<td class="align-left">Москва</td>
+							<td>0 / 0</td>
+							<td>0 / 0</td>
+							<td>0 / 0</td>
+							<td>На модерации</td>
+							<td>15.06.2022</td>
+						</tr>
+						<tr class="hidden">
+							<td>124</td>
+							<td class="align-left">
+								<strong>MB E-Class<i><img src="images/good.svg" alt=""></i><i><img src="images/stat.svg" alt=""></i></strong>
+								<span>2000 см3, 300 л.с., автомат, полный привод, красный</span>
+							</td>
+							<td class="align-left">Москва</td>
+							<td>0 / 0</td>
+							<td>0 / 0</td>
+							<td>0 / 0</td>
+							<td>На модерации</td>
+							<td>15.06.2022</td>
+						</tr>
+						<tr class="hidden">
+							<td>124</td>
+							<td class="align-left">
+								<strong>MB E-Class<i><img src="images/good.svg" alt=""></i><i><img src="images/stat.svg" alt=""></i></strong>
+								<span>2000 см3, 300 л.с., автомат, полный привод, красный</span>
+							</td>
+							<td class="align-left">Москва</td>
+							<td>0 / 0</td>
+							<td>0 / 0</td>
+							<td>0 / 0</td>
+							<td>На модерации</td>
+							<td>15.06.2022</td>
+						</tr>
+						<tr class="hidden">
+							<td>124</td>
+							<td class="align-left">
+								<strong>MB E-Class<i><img src="images/good.svg" alt=""></i><i><img src="images/stat.svg" alt=""></i></strong>
+								<span>2000 см3, 300 л.с., автомат, полный привод, красный</span>
+							</td>
+							<td class="align-left">Москва</td>
+							<td>0 / 0</td>
+							<td>0 / 0</td>
+							<td>0 / 0</td>
+							<td>На модерации</td>
+							<td>15.06.2022</td>
+						</tr>
+					</table>
+				</div>
+				<div class="table-footer">
+					Записи: <span class="highlight">1-10</span> из <span class="highlight">146</span>
+				</div>
+			</div>
+			<div class="link-separator">
+				<a id="showMore" href="#/">Показать еще</a>
+			</div>
+
+		</div>
+		
+		
+		<div class="footer">
+			<div class="logo">
+				<img src="images/carventa.svg" alt="Logo">
+			</div>
+			<span>Удобный сервис поиска вариантов продажи или обмена автомобиля от&nbsp;официальных дилеров</span>
+			<ul>
+				<li>
+					<a href="#">О проекте</a>
+				</li>
+				<li>
+					<a href="#">Контакты</a>
+				</li>
+				<li>
+					<a href="#">Правовая информация</a>
+				</li>
+			</ul>
+			<div class="copyrights">
+				© Carventa 2022 Все права защищены
+			</div>
+		</div>
+	</div>
+
+
+	<!-- input mask -->
+	<script type="text/javascript" src="js/showmore.js"></script>
+
+	<!-- input mask -->
+	<script type="text/javascript" src="js/inputmask.js"></script>
+
+	<!-- profile toggle menu -->
+	<script type="text/javascript" src="js/accountnav.js"></script>
+</body>
+</html>

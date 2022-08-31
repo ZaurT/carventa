@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Запросы оценки автомобиля. Carventa</title>
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+</head>
+<body>
+	<div class="wrapper inner-page">
+		<div class="header">
+			<a href="#/" class="back-btn">
+				<img src="images/arrow-left.svg" alt="">
+			</a>
+			<div class="logo">
+				<img src="images/carventa.svg" alt="Logo">
+			</div>
+			<div class="nav">
+				<ul>
+					<li>
+						<a href="#">Запросы оценки автомобиля</a>
+					</li>
+					<li>
+						<a href="#">О сервисе</a>
+					</li>
+					<li>
+						<a href="#">Контакты</a>
+					</li>
+					<li>
+						<a href="#" class="icon-item">
+							<i class="menu-icon"><img src="images/log-in.svg" alt="вход"></i> 
+							<span>Вход</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="nav mobile">
+				<ul>
+					<li>
+						<a href="#" class="icon-item">
+							<i class="menu-icon"><img src="images/log-in.svg"></i>
+						</a>
+					</li>
+				</ul>
+				<input id="nav-toggle" type="checkbox">
+				<label for="nav-toggle" class="icon-burger">
+					<div class="line-holder">
+						<div class="line"></div>
+					    <div class="line"></div>
+					    <div class="line"></div>
+					</div>
+			  	</label>
+			  	<div class="nav-overlay">
+			  		<div class="request-item">
+			  			Запросы оценки автомобиля
+			  			<a href="#" class="amount">58 новых</a>
+			  		</div>
+			  		<ul>
+			  			<li><a href="#">О сервисе</a></li>
+						<li><a href="#">Дилеры-партнеры</a></li>
+						<li><a href="#">Пользовательское соглашение</a></li>
+						<li><a href="#">Политика обработки данных</a></li>
+						<li><a href="#">Контакты</a></li>
+						<li><a href="#">Чат техподдержки</a></li>
+			  		</ul>
+			  	</div>
+			</div>
+		</div>
+
+		<div class="page">
+			<div class="title">
+				<h2>Запросы оценки автомобиля</h2>
+				<a href="#/"  class="btn pull-right mob-icon modal-link" for="#modalEnterVin">
+					<span>Сделать запрос</span>
+					<i><img src="images/plus.svg" alt=""></i>
+				</a>
+			</div>
+			<div class="warning">
+				<i class="icon"><img src="images/warning.svg"></i>
+				<span>Допускается не&nbsp;более трех активных запросов, из&nbsp;которых один может быть в&nbsp;режиме «Черновик».</span>
+			</div>
+			<div id="activeRequests">
+				<div class="cols-3">
+					<div class="col">
+						<div class="card">
+							<div class="top">
+								<span class="left">Запрос №3456</span>
+								<span class="middle">12.06.2022</span>
+								<span class="right">
+									<div class="badge">
+										Готово
+									</div>
+								</span>
+							</div>
+							<div class="bottom">
+								<div class="item">
+									<span class="item-name">Ford Focus 2, 2009</span>
+									<i><img src="images/repeat.svg" alt="repeat icon"></i>
+									<span class="item-action">Обмен</span>
+								</div>
+								<div class="card-footer">
+									<div class="item-stat">
+										<table>
+											<tr>
+												<td><strong>Просмотрено:</strong></td>
+												<td><strong>34 <a href="#">(5)</strong></a></td>
+											</tr>
+											<tr>
+												<td><strong>Предложений:</strong></td>
+												<td><strong>12 <a href="#">(3)</strong></a></td>
+											</tr>
+										</table>
+									</div>
+									<div class="item-list">
+										<ul>
+											<li>LR Range Rover, 2012-2014, бензин</li>
+											<li>Toyota LC Prado, 2012-2014, бензин</li>
+											<li>Mitsubishi Pagero Sport, 2012-2014</li>
+										</ul>
+									</div>
+									
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card">
+							<div class="top">
+								<span class="left">Запрос №3986</span>
+								<span class="middle">10.06.2022</span>
+								<span class="right">
+									<div class="badge">
+										Готово
+									</div>
+								</span>
+							</div>
+							<div class="bottom">
+								<div class="item">
+									<span class="item-name">Ford Focus 2, 2009</span>
+									<i><img src="images/buy.svg" alt="buy icon"></i>
+									<span class="item-action">Продажа</span>
+								</div>
+								<div class="card-footer">
+									<div class="item-stat">
+										<table>
+											<tr>
+												<td><strong>Просмотрено:</strong></td>
+												<td><strong>134 <a href="#">(15)</strong></a></td>
+											</tr>
+											<tr>
+												<td><strong>Предложений:</strong></td>
+												<td><strong>56 <a href="#">(3)</a></strong></td>
+											</tr>
+										</table>
+									</div>
+									<div class="item-list">
+										<ul>
+											<li>LR Range Rover, 2012-2014, бензин</li>
+											<li>Toyota LC Prado, 2012-2014, бензин</li>
+											<li>Mitsubishi Pagero Sport, 2012-2014</li>
+										</ul>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card">
+							<div class="top">
+								<span class="left">Запрос №3986</span>
+								<span class="middle">09.06.2022</span>
+								<span class="right">
+									<div class="badge inactive">Черновик</div>
+								</span>
+							</div>
+							<div class="bottom">
+								<div class="item">
+									<span class="item-name">Ford Focus 2, 2009</span>
+									<i><img src="images/repeat.svg" alt="repeat icon"></i>
+									<span class="item-action">Обмен</span>
+								</div>
+								<div class="card-footer">
+									<div class="item-list">
+										<ul>
+											<li>LR Range Rover, 2012-2014, бензин</li>
+											<li>Toyota LC Prado, 2012-2014, бензин</li>
+										</ul>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="link-separator">
+				<a href="#/" id="hideArchive">Скрыть архивные</a>
+			</div>
+			<div id="archiveRequests" class="archive hide-cards">
+				<div class="cols-3">
+					<div class="col">
+						<div class="card inactive-card">
+							<div class="top">
+								<span class="left">Запрос №3456</span>
+								<span class="middle">12.06.2022</span>
+								<span class="right">
+									<div class="badge">
+										Закрыт
+									</div>
+								</span>
+							</div>
+							<div class="bottom">
+								<div class="item">
+									<span class="item-name">Ford Focus 2, 2009</span>
+									<i><img src="images/repeat.svg" alt="repeat icon"></i>
+									<span class="item-action">Обмен</span>
+								</div>
+								<div class="card-footer">
+									<div class="item-stat">
+										<table>
+											<tr>
+												<td><strong>Просмотрено:</strong></td>
+												<td><strong>34 <a href="#">(5)</strong></a></td>
+											</tr>
+											<tr>
+												<td><strong>Предложений:</strong></td>
+												<td><strong>12 <a href="#">(3)</strong></a></td>
+											</tr>
+										</table>
+									</div>
+									<div class="item-list">
+										<ul>
+											<li>LR Range Rover, 2012-2014, бензин</li>
+											<li>Toyota LC Prado, 2012-2014, бензин</li>
+											<li>Mitsubishi Pagero Sport, 2012-2014</li>
+										</ul>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card inactive-card">
+							<div class="top">
+								<span class="left">Запрос №3986</span>
+								<span class="middle">10.06.2022</span>
+								<span class="right">
+									<div class="badge">
+										Закрыт
+									</div>
+								</span>
+							</div>
+							<div class="bottom">
+								<div class="item">
+									<span class="item-name">Ford Focus 2, 2009</span>
+									<i><img src="images/buy.svg" alt="buy icon"></i>
+									<span class="item-action">Продажа</span>
+								</div>
+								<div class="card-footer">
+									<div class="item-stat">
+										<table>
+											<tr>
+												<td><strong>Просмотрено:</strong></td>
+												<td><strong>134 <a href="#">(15)</strong></a></td>
+											</tr>
+											<tr>
+												<td><strong>Предложений:</strong></td>
+												<td><strong>56 <a href="#">(3)</a></strong></td>
+											</tr>
+										</table>
+									</div>
+									<div class="item-list">
+										<ul>
+											<li>LR Range Rover, 2012-2014, бензин</li>
+											<li>Toyota LC Prado, 2012-2014, бензин</li>
+											<li>Mitsubishi Pagero Sport, 2012-2014</li>
+										</ul>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card inactive-card">
+							<div class="top">
+								<span class="left">Запрос №3986</span>
+								<span class="middle">09.06.2022</span>
+								<span class="right">
+									<div class="badge">Закрыт</div>
+								</span>
+							</div>
+							<div class="bottom">
+								<div class="item">
+									<span class="item-name">Ford Focus 2, 2009</span>
+									<i><img src="images/repeat.svg" alt="repeat icon"></i>
+									<span class="item-action">Обмен</span>
+								</div>
+								<div class="card-footer">
+									<div class="item-list">
+										<ul>
+											<li>LR Range Rover, 2012-2014, бензин</li>
+											<li>Toyota LC Prado, 2012-2014, бензин</li>
+										</ul>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card inactive-card">
+							<div class="top">
+								<span class="left">Запрос №3456</span>
+								<span class="middle">12.06.2022</span>
+								<span class="right">
+									<div class="badge">
+										Закрыт
+									</div>
+								</span>
+							</div>
+							<div class="bottom">
+								<div class="item">
+									<span class="item-name">Ford Focus 2, 2009</span>
+									<i><img src="images/repeat.svg" alt="repeat icon"></i>
+									<span class="item-action">Обмен</span>
+								</div>
+								<div class="card-footer">
+									<div class="item-stat">
+										<table>
+											<tr>
+												<td><strong>Просмотрено:</strong></td>
+												<td><strong>34 <a href="#">(5)</strong></a></td>
+											</tr>
+											<tr>
+												<td><strong>Предложений:</strong></td>
+												<td><strong>12 <a href="#">(3)</strong></a></td>
+											</tr>
+										</table>
+									</div>
+									<div class="item-list">
+										<ul>
+											<li>LR Range Rover, 2012-2014, бензин</li>
+											<li>Toyota LC Prado, 2012-2014, бензин</li>
+											<li>Mitsubishi Pagero Sport, 2012-2014</li>
+										</ul>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card inactive-card">
+							<div class="top">
+								<span class="left">Запрос №3986</span>
+								<span class="middle">10.06.2022</span>
+								<span class="right">
+									<div class="badge">
+										Закрыт
+									</div>
+								</span>
+							</div>
+							<div class="bottom">
+								<div class="item">
+									<span class="item-name">Ford Focus 2, 2009</span>
+									<i><img src="images/buy.svg" alt="buy icon"></i>
+									<span class="item-action">Продажа</span>
+								</div>
+								<div class="card-footer">
+									<div class="item-stat">
+										<table>
+											<tr>
+												<td><strong>Просмотрено:</strong></td>
+												<td><strong>134 <a href="#">(15)</strong></a></td>
+											</tr>
+											<tr>
+												<td><strong>Предложений:</strong></td>
+												<td><strong>56 <a href="#">(3)</a></strong></td>
+											</tr>
+										</table>
+									</div>
+									<div class="item-list">
+										<ul>
+											<li>LR Range Rover, 2012-2014, бензин</li>
+											<li>Toyota LC Prado, 2012-2014, бензин</li>
+											<li>Mitsubishi Pagero Sport, 2012-2014</li>
+										</ul>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card inactive-card">
+							<div class="top">
+								<span class="left">Запрос №3986</span>
+								<span class="middle">09.06.2022</span>
+								<span class="right">
+									<div class="badge">Закрыт</div>
+								</span>
+							</div>
+							<div class="bottom">
+								<div class="item">
+									<span class="item-name">Ford Focus 2, 2009</span>
+									<i><img src="images/repeat.svg" alt="repeat icon"></i>
+									<span class="item-action">Обмен</span>
+								</div>
+								<div class="card-footer">
+									<div class="item-list">
+										<ul>
+											<li>LR Range Rover, 2012-2014, бензин</li>
+											<li>Toyota LC Prado, 2012-2014, бензин</li>
+										</ul>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card inactive-card">
+							<div class="top">
+								<span class="left">Запрос №3456</span>
+								<span class="middle">12.06.2022</span>
+								<span class="right">
+									<div class="badge">
+										Закрыт
+									</div>
+								</span>
+							</div>
+							<div class="bottom">
+								<div class="item">
+									<span class="item-name">Ford Focus 2, 2009</span>
+									<i><img src="images/repeat.svg" alt="repeat icon"></i>
+									<span class="item-action">Обмен</span>
+								</div>
+								<div class="card-footer">
+									<div class="item-stat">
+										<table>
+											<tr>
+												<td><strong>Просмотрено:</strong></td>
+												<td><strong>34 <a href="#">(5)</strong></a></td>
+											</tr>
+											<tr>
+												<td><strong>Предложений:</strong></td>
+												<td><strong>12 <a href="#">(3)</strong></a></td>
+											</tr>
+										</table>
+									</div>
+									<div class="item-list">
+										<ul>
+											<li>LR Range Rover, 2012-2014, бензин</li>
+											<li>Toyota LC Prado, 2012-2014, бензин</li>
+											<li>Mitsubishi Pagero Sport, 2012-2014</li>
+										</ul>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card inactive-card">
+							<div class="top">
+								<span class="left">Запрос №3986</span>
+								<span class="middle">10.06.2022</span>
+								<span class="right">
+									<div class="badge">
+										Закрыт
+									</div>
+								</span>
+							</div>
+							<div class="bottom">
+								<div class="item">
+									<span class="item-name">Ford Focus 2, 2009</span>
+									<i><img src="images/buy.svg" alt="buy icon"></i>
+									<span class="item-action">Продажа</span>
+								</div>
+								<div class="card-footer">
+									<div class="item-stat">
+										<table>
+											<tr>
+												<td><strong>Просмотрено:</strong></td>
+												<td><strong>134 <a href="#">(15)</strong></a></td>
+											</tr>
+											<tr>
+												<td><strong>Предложений:</strong></td>
+												<td><strong>56 <a href="#">(3)</a></strong></td>
+											</tr>
+										</table>
+									</div>
+									<div class="item-list">
+										<ul>
+											<li>LR Range Rover, 2012-2014, бензин</li>
+											<li>Toyota LC Prado, 2012-2014, бензин</li>
+											<li>Mitsubishi Pagero Sport, 2012-2014</li>
+										</ul>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card inactive-card">
+							<div class="top">
+								<span class="left">Запрос №3986</span>
+								<span class="middle">09.06.2022</span>
+								<span class="right">
+									<div class="badge">Закрыт</div>
+								</span>
+							</div>
+							<div class="bottom">
+								<div class="item">
+									<span class="item-name">Ford Focus 2, 2009</span>
+									<i><img src="images/repeat.svg" alt="repeat icon"></i>
+									<span class="item-action">Обмен</span>
+								</div>
+								<div class="card-footer">
+									<div class="item-list">
+										<ul>
+											<li>LR Range Rover, 2012-2014, бензин</li>
+											<li>Toyota LC Prado, 2012-2014, бензин</li>
+										</ul>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="link-separator">
+					<a id="showMore" href="#/">Показать еще</a>
+				</div>
+			</div>
+
+		</div>
+		
+		
+		<div class="footer">
+			<div class="logo">
+				<img src="images/carventa.svg" alt="Logo">
+			</div>
+			<span>Удобный сервис поиска вариантов продажи или обмена автомобиля от&nbsp;официальных дилеров</span>
+			<ul>
+				<li>
+					<a href="#">О проекте</a>
+				</li>
+				<li>
+					<a href="#">Контакты</a>
+				</li>
+				<li>
+					<a href="#">Правовая информация</a>
+				</li>
+			</ul>
+			<div class="copyrights">
+				© Carventa 2022 Все права защищены
+			</div>
+		</div>
+	</div>
+	<div id="modalEnterVin" class="modal">
+		<div class="modal-bg"></div>
+		<div class="modal-window modal-window-small">
+			<div class="close"><img src="images/check.svg" data-action="close"></div>
+			<div class="modal-logo">
+				<img src="images/carventa-modal.svg" alt="">
+			</div>
+			<div class="modal-body text-center">
+				<h4 class="text-center">Введите VIN автомобиля <br>для оценки</h4>
+				<span>Что такое VIN?</span>
+				<input type="text" class="custom-input" placeholder="17 символов">
+				<span>Буквы нужно вводить латиницей <br>(английская раскладка клавиатуры)</span>
+				<a href="#/" class="btn modal-link" for="#modalNotification" >Готово</a>
+			</div>
+		</div>
+	</div>
+	<div id="modalNotification" class="modal">
+		<div class="modal-bg"></div>
+		<div class="modal-window modal-window-small">
+			<div class="close"><img src="images/check.svg" data-action="close"></div>
+			<div class="modal-logo">
+				<img src="images/carventa-modal.svg" alt="">
+			</div>
+			<div class="modal-body text-center">
+				<span>Принято!<br>
+				Характеристики вашего автомобиля сейчас автоматически загрузятся в&nbsp;шаблон запроса. 
+				Проверьте их&nbsp;и, по&nbsp;необходимости, дополните информацию.<br>
+				Если загрузились характеристики не&nbsp;вашего автомобиля, проверьте правильность ввода VIN
+				или введите другой VIN.<br><br>
+				Далее нужно будет добавить фотографии автомобиля <br>и&nbsp;заполнить лист осмотра.</span>
+				<a href="#/" class="btn m-t-30" data-action="close" >Понятно</a>
+			</div>
+		</div>
+	</div>
+	<div id="modalCorrectVin" class="modal">
+		<div class="modal-bg"></div>
+		<div class="modal-window modal-window-small">
+			<div class="close"><img src="images/check.svg" data-action="close"></div>
+			<div class="modal-logo">
+				<img src="images/carventa-modal.svg" alt="">
+			</div>
+			<div class="modal-body text-center">
+					<span>Внимательно проверьте, как написан VIN в&nbsp;документах на&nbsp;автомобиль. <br>Он&nbsp;должен быть написан только латинскими буквами и&nbsp;состоять <br>не&nbsp;более чем из&nbsp;17&nbsp;символов. VIN никогда не&nbsp;содержит буквы &laquo;I&raquo;, &laquo;O&raquo;, &laquo;Q&raquo;. <br><br>
+					Также проверьте нет&nbsp;ли пробелов.<br>
+					Многие путают буквы&nbsp;U и&nbsp;V, J&nbsp;и&nbsp;G, S&nbsp;и&nbsp;C.&nbsp;Проверьте нет&nbsp;ли опечатки.<br><br>
+					Если VIN введен верно, но&nbsp;ошибка подвторилась, обратитесь в&nbsp;чат поддержки.
+				</span>
+				<a href="#/" class="btn modal-link m-t-30" for="#modalConfirmEmail" >Ввести VIN заново</a>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+
+		/*Скрыть архивные*/
+		const hideBtn = document.getElementById('hideArchive');
+		const blockToHide = document.getElementById('archiveRequests');
+
+		const clickHideBtnHandler = () =>  {
+			blockToHide.classList.toggle('hide')
+			hideBtn.innerHTML = blockToHide.classList.contains('hide') ? 'Показать архивные' : 'Скрыть архивные'
+		}
+
+		hideBtn.addEventListener('click', clickHideBtnHandler)
+
+		/*Показать еще*/
+		const showMoreBtn = document.getElementById('showMore');
+		const blockToToggle = document.getElementById('archiveRequests');
+
+		const clickShowMoreHandler = () => {
+			blockToToggle.classList.remove('hide-cards')
+			showMoreBtn.style.display = 'none'
+		}
+
+		showMoreBtn.addEventListener('click', clickShowMoreHandler)
+	</script>
+
+	<!-- Modal window -->
+	<script type="text/javascript" src="js/modalwindow.js"></script>
+	
+</body>
+</html>

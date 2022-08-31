@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Баланс клиента. Carventa</title>
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+</head>
+<body>
+	<div class="wrapper inner-page">
+		<div class="header">
+			<a href="#/" class="back-btn">
+				<img src="images/arrow-left.svg" alt="">
+			</a>
+			<div class="logo">
+				<img src="images/carventa.svg" alt="Logo">
+			</div>
+			<div class="nav">
+				<ul>
+					<li>
+						<a href="#">Запросы оценки автомобиля</a>
+					</li>
+					<li>
+						<a href="#">О сервисе</a>
+					</li>
+					<li>
+						<a href="#">Контакты</a>
+					</li>
+					<li>
+						<a href="#" class="icon-item  toggle-submenu">
+							<i class="menu-icon"><img src="images/profile.svg"></i> 
+							<span>Профиль</span>
+						</a>
+						<div class="submenu-holder">
+							<i class="submenu-icon toggle-close"><img src="images/close.svg" alt="Закрыть"></i>
+							<ul class="submenu">
+								<li class="no-icon-item">
+									<span>Иван Иванов</span>
+									<ul class="actions">
+										<li>
+											<a href="#">Редактировать</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#" class="icon-item">
+										<i class="menu-icon"><img src="images/clarity_settings-line.svg" alt="Настройки"></i> 
+										<span>Настройки</span>
+									</a>
+									<ul>
+										<li>
+											<a href="#">Пользователи</a>
+										</li>
+										<li>
+											<a href="#">Дилерские центры</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#" class="icon-item">
+										<i class="menu-icon"><img src="images/exit.svg" alt="Выйти"></i> 
+										<span>Выйти</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="nav mobile">
+				<ul>
+					<li>
+						<a href="#" class="icon-item  toggle-submenu">
+							<i class="menu-icon"><img src="images/profile.svg"></i>
+						</a>
+						<div class="submenu-holder">
+							<i class="submenu-icon toggle-close"><img src="images/close.svg" alt="Закрыть"></i>
+							<ul class="submenu">
+								<li class="no-icon-item">
+									<span>Иван Иванов</span>
+									<ul class="actions">
+										<li>
+											<a href="#">Редактировать</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#" class="icon-item">
+										<i class="menu-icon"><img src="images/clarity_settings-line.svg" alt="Настройки"></i> 
+										<span>Настройки</span>
+									</a>
+									<ul>
+										<li>
+											<a href="#">Пользователи</a>
+										</li>
+										<li>
+											<a href="#">Дилерские центры</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#" class="icon-item">
+										<i class="menu-icon"><img src="images/exit.svg" alt="Выйти"></i> 
+										<span>Выйти</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+				<input id="nav-toggle" type="checkbox">
+				<label for="nav-toggle" class="icon-burger">
+					<div class="line-holder">
+						<div class="line"></div>
+					    <div class="line"></div>
+					    <div class="line"></div>
+					</div>
+			  	</label>
+			  	<div class="nav-overlay">
+			  		<div class="request-item">
+			  			Запросы оценки автомобиля
+			  			<a href="#" class="amount">58 новых</a>
+			  		</div>
+			  		<ul>
+			  			<li><a href="#">О сервисе</a></li>
+						<li><a href="#">Дилеры-партнеры</a></li>
+						<li><a href="#">Пользовательское соглашение</a></li>
+						<li><a href="#">Политика обработки данных</a></li>
+						<li><a href="#">Контакты</a></li>
+						<li><a href="#">Чат техподдержки</a></li>
+			  		</ul>
+			  	</div>
+			</div>
+		</div>
+
+		<div class="page page-table">
+			<div class="title sm-margin flex-start sm-flex-column">
+				<h2>Баланс клиента</h2>
+			</div>
+			<div class="info-bar">
+				<span class="info-bar-title">Дилерский центр: <strong>Независимость, Москва (12345)</strong></span>
+				<div class="info-bar-holder">
+					<div class="cols-3 cols-sm-3 cols-xs-1">
+						<div class="col">
+							<div class="block">
+								<span class="block-top">Начисления</span>
+								<span class="block-bot"><nobr>100 000 Р</nobr></span>
+							</div>
+						</div>
+						<div class="col text-center">
+							<div class="block-main-holder">
+								<div class="block block-main">
+									<span class="block-top">Задолженность:</span>
+									<span class="block-bot"><nobr>100 000 Р</nobr></span>
+								</div>
+								<div class="footnote">
+									<span>Порог долга: <nobr>1000 Р</nobr></span>
+									<span class="highlight">Превышение: <nobr>9 000 Р</nobr></span>
+								</div>
+							</div>
+							
+						</div>
+						<div class="col text-right">
+							<div class="block">
+								<span class="block-top">Поступления</span>
+								<span class="block-bot"><nobr>90 000 Р</nobr></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="cols-2 cols-sm-1">
+				<div class="col">
+					<div class="custom-table custom-table-compact full-width">
+						<div class="table-header">
+							<span>Последние начисления</span>
+							<a href="#/" class="link">Все</a>
+						</div>
+						<div class="table-holder">
+							<table>
+								<tr>
+									<th>Дата</th>
+									<th>Услуга</th>
+									<th>Сумма</th>
+								</tr>
+								<tr>
+									<td class="filter-cell text-left">12.06.2022 14:05</td>
+									<td class="filter-cell text-left">Брошюры</td>
+									<td class="filter-cell">400.00</td>
+								</tr>
+								<tr>
+									<td class="filter-cell text-left">12.06.2022 14:05</td>
+									<td class="filter-cell text-left">Пакет «Базовый»</td>
+									<td class="filter-cell">1000.28</td>
+								</tr>
+								<tr>
+									<td class="filter-cell text-left">12.06.2022 14:05</td>
+									<td class="filter-cell text-left">Документы</td>
+									<td class="filter-cell">2500.50</td>
+								</tr>
+							</table>
+						</div>
+						<div class="table-footer text-right">
+							<a href="#/" class="link">Все начисления</a>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="custom-table custom-table-compact full-width">
+						<div class="table-header">
+							<span>Последние поступления</span>
+							<a href="#/" class="link">Все</a>
+						</div>
+						<div class="table-holder">
+							<table>
+								<tr>
+									<th>Дата</th>
+									<th>№ счета</th>
+									<th>Назначение</th>
+									<th>Сумма</th>
+								</tr>
+								<tr>
+									<td class="filter-cell">20.01.2022</td>
+									<td class="filter-cell">10-125</td>
+									<td class="filter-cell text-left">Оплата услуг за февраль 2022</td>
+									<td class="filter-cell">400,00</td>
+								</tr>
+								<tr>
+									<td class="filter-cell">20.12.2021</td>
+									<td class="filter-cell">10-123</td>
+									<td class="filter-cell text-left">Оплата услуг за январь 2022</td>
+									<td class="filter-cell">1000.28</td>
+								</tr>
+								<tr>
+									<td class="filter-cell">20.11.2021</td>
+									<td class="filter-cell">10-121</td>
+									<td class="filter-cell text-left">Оплата доп. услуг</td>
+									<td class="filter-cell">2500.50</td>
+								</tr>
+							</table>
+						</div>
+						<div class="table-footer text-right">
+							<a href="#/" class="link">Все поступления и счета</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		
+		
+		<div class="footer">
+			<div class="logo">
+				<img src="images/carventa.svg" alt="Logo">
+			</div>
+			<span>Удобный сервис поиска вариантов продажи или обмена автомобиля от&nbsp;официальных дилеров</span>
+			<ul>
+				<li>
+					<a href="#">О проекте</a>
+				</li>
+				<li>
+					<a href="#">Контакты</a>
+				</li>
+				<li>
+					<a href="#">Правовая информация</a>
+				</li>
+			</ul>
+			<div class="copyrights">
+				© Carventa 2022 Все права защищены
+			</div>
+		</div>
+	</div>
+</body>
+
+<!-- profile toggle menu -->
+<script type="text/javascript" src="js/accountnav.js"></script>
+</html>
